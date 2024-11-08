@@ -16,11 +16,19 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    {/* user */}
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/signup" element={<SignUp/>}></Route>
       <Route path="/productdetail" element={<ProductDetails/>}></Route>
+     </Routes>
+
+     {/* admin */}
+     <Routes>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/adminlogin" element={<Login/>}></Route>
+      <Route path="/adminsignup" element={<SignUp/>}></Route>
      </Routes>
      </BrowserRouter>
    
