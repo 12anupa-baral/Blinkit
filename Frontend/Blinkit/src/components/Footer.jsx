@@ -3,6 +3,7 @@ import Youtube from '../assets/Icons/Youtube'
 import Linkedin from '../assets/Icons/Linkedin'
 import Instagram from '../assets/Icons/Instagram'
 import Twitter from '../assets/Icons/Twitter'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -93,10 +94,14 @@ const Footer = () => {
                
             </div>
         </div>
+        
       
         <div className="py-7 border-t border-gray-200">
             <div className="flex items-center justify-center flex-col sm:justify-between sm:flex-row">
                 <span className="text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a>2024, All rights reserved.</span>
+                <Link to='/termsandcondition'>
+                <h3 className='hover:text-green-600 hover:underline'>Terms and Condition</h3>
+                </Link>
                 <div className="flex mt-6 space-x-4 sm:justify-center sm:mt-0 ">
                     <a href="javascript:;"
                         className="group w-9 h-9 transition-all duration-500 rounded-full border border-gray-300 flex justify-center items-center hover:border-indigo-600">

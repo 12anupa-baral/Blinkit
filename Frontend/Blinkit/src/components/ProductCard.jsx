@@ -27,9 +27,9 @@ const ProductCard = ({ imageUrl, brand, name, price, originalPrice }) => {
                 ${originalPrice}
               </p>
             </del>
-            <div className="ml-auto">
+            <Link className='ml-auto' to='/cart'>
              <AddToCart/>
-            </div>
+            </Link>
           </div>
         </div>
       </a>

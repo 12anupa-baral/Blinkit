@@ -5,6 +5,7 @@ import Logo from '../assets/Icons/Logo'
 import Hamburger from '../assets/Icons/Hamburger'
 import Search from '../assets/Icons/Search'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -34,11 +35,14 @@ const Navbar = () => {
             <div className='flex gap-4 items-center'>
             <Button/>
             <Cart/>
+            <Link to='/profile'>
             <img
               className="inline-block w-8 h-8 rounded-full ring-2 ring-white"
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt="User profile"
             />
+            </Link>
+            
             </div>
         
         </div>
